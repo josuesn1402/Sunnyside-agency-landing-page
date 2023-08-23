@@ -1,13 +1,19 @@
-import ButtonsStyles from '../scss/components/Buttons.scss';
+import ButtonsStyles from '../scss/components/Buttons.module.scss';
 
-const btnWhite = text => {
+const btnWhite = (text: string) => {
 	return (
-		<button clasName={ButtonsStyles.Btn ButtonsStyles.BtnWhite}>{text}</button>
+		<button className={`${ButtonsStyles.Btn} ${ButtonsStyles.BtnWhite}`}>
+			{text}
+		</button>
 	);
-}
+};
 
-const btnYellow = text => {
+const btnYellow = (text: string) => {
 	return (
-		<button clasName={ButtonsStyles.Btn ButtonsStyles.BtnYellow}>{text}</button>
+		<button className={`${ButtonsStyles.Btn} ${ButtonsStyles.BtnYellow}`}>
+			{text}
+		</button>
 	);
-}
+};
+
+export { btnWhite, btnYellow };

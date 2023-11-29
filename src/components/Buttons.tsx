@@ -1,6 +1,6 @@
 import ButtonsStyles from '../scss/components/Buttons.module.scss';
 
-const btnWhite = (text: string) => {
+const BtnWhite = (text: string) => {
 	return (
 		<button className={`${ButtonsStyles.Btn} ${ButtonsStyles.BtnWhite}`}>
 			{text}
@@ -8,7 +8,7 @@ const btnWhite = (text: string) => {
 	);
 };
 
-const btnYellow = (text: string) => {
+const BtnYellow = (text: string) => {
 	return (
 		<button className={`${ButtonsStyles.Btn} ${ButtonsStyles.BtnYellow}`}>
 			{text}
@@ -16,4 +16,4 @@ const btnYellow = (text: string) => {
 	);
 };
 
-export { btnWhite, btnYellow };
+export { BtnWhite, BtnYellow };
